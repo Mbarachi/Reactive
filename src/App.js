@@ -25,10 +25,10 @@ class App extends React.Component{
         return(
           <div>
             <Header />
-            <SideMenu content={this.handlePick}/>
+            <Content/>
             <TopRightForm />
             <TopFeeds />
-            <Content heading = {this.state.count} content={this.handlePick}/>
+            
           </div>
         )
       

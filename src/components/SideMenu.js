@@ -1,11 +1,11 @@
 import React from "react"
-import "./side.css"
+import "./Style.css"
 
 function SideMenu(props) {
     return(
             <div class="bg-light border-right" id="sidebar-wrapper">
                 <div class="sidebar-heading"><strong>Zigla</strong></div>
-                <div class="list-group">
+                <div class="list-group ">
                 <a href="#" class="list-group-item list-group-item-action bg-light"><i class="icon-dashboard"></i>Dashboard</a>
                     <a href="#" class="list-group-item list-group-item-action bg-light">Notifications</a>
                     <a href="#" class="list-group-item list-group-item-action bg-light">Teams</a>
