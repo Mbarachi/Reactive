@@ -8,9 +8,12 @@ function Content(props) {
             <SideMenu />
             <div id="page-content-wrapper">
                 <div class="container-fluid">
-                    <h1 class="mt-4">Simple Sidebar</h1>
-                    <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-                    <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
+                    <h1 class="mt-4">{props.body}</h1>
+                    <p>Lets pull in something with an API here for more reactive Feel</p>
+                    <p>So at this point, the React app increases the Number count by one in the 
+                        <code>#page-content-wrapper</code>.
+                        <p>whenever the "Create project" is being clicked!</p>
+                    </p>
                 </div>
             </div>
         

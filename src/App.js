@@ -23,8 +23,8 @@ class App extends React.Component{
       render(){
         return(
           <div>
-            <Header />
-            <Content/>
+            <Header handlepick = {this.handlePick}/>
+            <Content body={this.state.count}/>
             <TopRightForm />
             <TopFeeds />
             
