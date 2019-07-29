@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from "./components/Header"
-import SideMenu from "./components/SideMenu"
 import TopRightForm from "./components/TopRightForm"
 import TopFeeds from "./components/TopFeeds"
 import Content from "./components/Content"
