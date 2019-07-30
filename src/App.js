@@ -27,7 +27,6 @@ class App extends React.Component{
             <Content body={this.state.count}/>
             <TopRightForm />
             <TopFeeds />
-            
           </div>
         )
       

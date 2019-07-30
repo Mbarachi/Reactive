@@ -1,4 +1,5 @@
 import React from "react"
+import Button from "@material-ui/core/Button"
 
 function Nav1(props) {
     return(
@@ -9,7 +10,7 @@ function Nav1(props) {
                     <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
                     </div>
                 </form>
-                <button class="btn btn-danger btn-md my-2 my-sm-0 ml-3 zinox" onClick={props.handlepick}>Create Project</button>
+                <Button variant="contained" color="primary" onClick={props.handlepick}>Create Project</Button>
             </nav>
         </div>
     )
