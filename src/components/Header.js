@@ -5,7 +5,7 @@ import Nav2 from "./Nav2"
 function Header(props) {
     return(
         <header>
-            <Nav1 handlepick = {props.handlepick} />
+            <Nav1 handlepick = {props.handlepick} minus={props.minus} reset={props.reset}/>
             <Nav2 />
         </header>
     )

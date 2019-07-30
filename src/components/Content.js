@@ -35,6 +35,9 @@ componentDidMount(){
                         <h1 class="mt-4">{this.props.body}</h1>
                         <p>Lets  pull in something with an API here for more reactive Feel</p>
                         <h3>{text}</h3>
+                        <h4>{this.state.character.manufacturer}</h4>
+                        <p style={{color: "brown"}}>Starship-Class: {this.state.character.starship_class}</p>
+                        <hr/>
                         <p>So at this point, the React app increases the Number count by one in the 
                             <code>#page-content-wrapper</code>.
                             <p>whenever the "Create project" is being clicked!</p>

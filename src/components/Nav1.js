@@ -11,6 +11,8 @@ function Nav1(props) {
                     </div>
                 </form>
                 <Button variant="contained" color="primary" onClick={props.handlepick}>Create Project</Button>
+                <Button variant="contained" color="primary" onClick={props.minus}>Reduce</Button>
+                <Button variant="contained" color="primary" onClick={props.reset}>Reset</Button>
             </nav>
         </div>
     )

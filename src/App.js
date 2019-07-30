@@ -11,6 +11,8 @@ class App extends React.Component{
         count: 0
       }
       this.handlePick = this.handlePick.bind(this)
+      this.handelePickReduce = this.handelePickReduce.bind(this)
+      this.handelePickReset = this.handelePickReset.bind(this)
     }
     
       handlePick(){
@@ -20,10 +22,25 @@ class App extends React.Component{
           }
         })
       }
+
+      handelePickReduce() {
+        this.setState((prevState) => {
+          return{
+            count : prevState.count - 1
+          }
+        })
+      }
+      handelePickReset() {
+        this.setState((prevState) => {
+          return{
+            count: 0
+          }
+        })
+      }
       render(){
         return(
           <div>
-            <Header handlepick = {this.handlePick}/>
+            <Header handlepick = {this.handlePick} minus={this.handelePickReduce} reset={this.handelePickReset}/>
             <Content body={this.state.count}/>
             <TopRightForm />
             <TopFeeds />
